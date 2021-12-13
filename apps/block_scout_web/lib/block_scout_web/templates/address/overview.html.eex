@@ -120,10 +120,6 @@
         </div>
       </div>
     </div>
-    <!-- Balance -->
-    <div class="card-section col-md-12 col-lg-4 pl-0-md js-ad-dependant-mb-2" data-selector="balance-card">
-      <%= render BlockScoutWeb.AddressView, "_balance_card.html", conn: @conn, address: @address, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status %>
-    </div>
 
   </div>
 </section>
