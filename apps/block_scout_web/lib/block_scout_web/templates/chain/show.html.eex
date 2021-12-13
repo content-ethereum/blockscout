@@ -49,7 +49,7 @@
           </div>
           <div class="dashboard-banner-network-stats-item dashboard-banner-network-stats-item-4">
             <span class="dashboard-banner-network-stats-label">
-              <%= gettext "Wallet addresses" %>
+              <%= gettext "User addresses" %>
             </span>
             <span class="dashboard-banner-network-stats-value" data-selector="address-count">
               <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
