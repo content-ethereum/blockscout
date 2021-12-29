@@ -90,3 +90,29 @@ $dark-primary-alternate: $jcbi-color-blue;
 // Tile Customize
 $tile-type-block-color: $jcbi-color-red; 
 $tile-type-contract-call-color: $jcbi-color-yellow;
+
+// Font
+$success: $secondary;
+
+// Link(Except tile)
+$link-color: $jcbi-color-red;
+$common-link-color: $jcbi-color-red;
+
+// Badge
+$badge-danger-color: $jcbi-color-yellow;
+$badge-success-color: $primary;
+
+// Alert
+.alert-info {
+  color: $jcbi-color-yellow;
+  background-color: $jcbi-color-light-yellow;
+  border-color: $jcbi-color-light-yellow;
+}
+
+// Label
+.bs-label {
+    &.success {
+        background: $secondary;
+        color: $primary;
+    }
+}
