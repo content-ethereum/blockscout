@@ -19,6 +19,7 @@
 <% %Wei{value: burned_fee_decimal} = if is_nil(burned_fee), do: %Wei{value: Decimal.new(0)}, else: burned_fee %>
 <% priority_fee_per_gas = if is_nil(max_priority_fee_per_gas) or is_nil(base_fee_per_gas), do: nil, else: Enum.min_by([max_priority_fee_per_gas, Wei.sub(max_fee_per_gas, base_fee_per_gas)], fn x -> Wei.to(x, :wei) end) %>
 <% priority_fee = if is_nil(priority_fee_per_gas), do: nil, else: Wei.mult(priority_fee_per_gas, @transaction.gas_used) %>
+<% decoded_input_data = decoded_input_data(@transaction) %>
 <% status = transaction_status(@transaction) %>
 <% circles_addresses_list = CustomContractsHelpers.get_custom_addresses_list(:circles_addresses) %>
 <% address_hash_str = if to_address_hash, do: "0x" <> Base.encode16(to_address_hash.bytes, case: :lower), else: nil %>
@@ -500,5 +501,12 @@
 
   <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
+  <%= unless skip_decoding?(@transaction) do %>
+    <div class="row">
+      <div class="col-md-12">
+        <%= render BlockScoutWeb.TransactionView, "_decoded_input.html", Map.put(assigns, :decoded_input_data, decoded_input_data) %>
+      </div>
+    </div>
+  <% end %>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/transaction.js") %>"></script>
 </section>
