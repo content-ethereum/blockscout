@@ -1,7 +1,7 @@
 <%= if assigns[:address] do %>
   <title>
     <%= gettext(
-          "%{address} - %{subnetwork} Explorer",
+          "Content Ethereum Explorer",
           address: BlockScoutWeb.AddressView.address_page_title(@address),
           subnetwork: LayoutView.subnetwork_title()
         ) %>
