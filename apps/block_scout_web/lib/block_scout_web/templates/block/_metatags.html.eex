@@ -1,7 +1,7 @@
 <%= if assigns[:block] do %>
   <title>
     <%= gettext(
-          "Block %{block_number} - %{subnetwork} Explorer",
+          "Content Ethereum Explorer",
           block_number: @block.number,
           subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
         ) %>

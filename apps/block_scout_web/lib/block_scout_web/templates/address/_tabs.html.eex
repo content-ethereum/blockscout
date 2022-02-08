@@ -57,25 +57,11 @@
         <i class="far fa-check-circle"></i>
     <% end %>
   <% end %>
-  <%= if smart_contract_with_read_only_functions?(@address) do %>
-    <%= link(
-        gettext("Read Contract"),
-        to: AccessHelpers.get_path(@conn, :address_read_contract_path, :index, @address.hash),
-        class: "card-tab #{tab_status("read-contract", @conn.request_path)}")
-        %>
-  <% end %>
   <%= if @is_proxy do %>
     <%= link(
         gettext("Read Proxy"),
         to: AccessHelpers.get_path(@conn, :address_read_proxy_path, :index, @address.hash),
         class: "card-tab #{tab_status("read-proxy", @conn.request_path)}")
-        %>
-  <% end %>
-  <%= if smart_contract_with_write_functions?(@address) do %>
-    <%= link(
-        gettext("Write Contract"),
-        to: AccessHelpers.get_path(@conn, :address_write_contract_path, :index, @address.hash),
-        class: "card-tab #{tab_status("write-contract", @conn.request_path)}")
         %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@address) && @is_proxy  do %>
