@@ -1984,7 +1984,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_search.html.eex:3
-msgid "Search by address, token symbol name, transaction hash, or block number"
+msgid "Search by address, transaction hash, or block number"
 msgstr ""
 
 #, elixir-format
