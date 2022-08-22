@@ -1,7 +1,7 @@
 <%= if assigns[:transaction] do %>
   <title>
     <%= gettext(
-          "Content Ethereum Explorer",
+          "Blockchain Explorer",
           transaction: to_string(@transaction.hash),
           subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
         ) %>
