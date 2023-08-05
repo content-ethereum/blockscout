@@ -1,22 +1,22 @@
-// JCBI colors
-$jcbi-color-blue: #1188DE;
-$jcbi-color-light-blue: #31B0EB;
-$jcbi-color-red: #DC0011;
-$jcbi-color-yellow: #FFDC0C;
-$jcbi-color-light-yellow: #FFF77A;
-$jcbi-color-yellow-green: #C5D706;
+// Sanpō colors
+$sanpo-color-blue: #1188DE;
+$sanpo-color-light-blue: #31B0EB;
+$sanpo-colorre-d: #DC0011;
+$sanpo-color-yellow: #FF6D50;
+$sanpo-color-light-yellow: #ffa18e;
+$sanpo-color-yellow-green: #C5D706;
 
 // general
-$primary: $jcbi-color-blue;
-$secondary: $jcbi-color-light-blue;
+$primary: $sanpo-color-yellow;
+$secondary: $sanpo-color-light-yellow;
 $tertiary: #9FA8DA;
 $additional-font: #fff;
 
 // footer
-$footer-background-color: $jcbi-color-yellow-green;
+$footer-background-color: $secondary;
 $footer-title-color: #fff;
 $footer-text-color: #bda6e7;
-$footer-item-disc-color: $secondary;
+$footer-item-disc-color: $primary;
 .footer-logo { filter: brightness(0) invert(1); }
 
 // dashboard
@@ -33,7 +33,7 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #31B0EB; // stats bg
+$dashboard-banner-network-plain-container-background-color: $secondary; // stats bg
 
 
 // navigation
@@ -51,10 +51,10 @@ $btn-qr-color: $primary; // btn qr-code
 $btn-address-card-icon-color: $primary; // btn address color
 
 //links & tile
-$tile-body-a-color: $jcbi-color-red;
+$tile-body-a-color: #333333;
 $tile-type-block-color: $primary;
 $tile-type-progress-bar-color: $primary;
-a.tile-title { color: $jcbi-color-red !important; }
+a.tile-title { color: #333333 !important; }
 
 // card
 $card-background-1: $primary;
@@ -83,30 +83,30 @@ $api-text-monospace-color: $primary;
 }
 
 // Dark theme
-$dark-primary: $jcbi-color-blue;
-$dark-secondary: $jcbi-color-light-blue;
-$dark-primary-alternate: $jcbi-color-blue; 
+$dark-primary: $sanpo-color-blue;
+$dark-secondary: $sanpo-color-light-blue;
+$dark-primary-alternate: $sanpo-color-blue; 
 
 // Tile Customize
-$tile-type-block-color: $jcbi-color-red; 
-$tile-type-contract-call-color: $jcbi-color-yellow;
+$tile-type-block-color: $sanpo-color-blue; 
+$tile-type-contract-call-color: $sanpo-color-yellow;
 
 // Font
 $success: $secondary;
 
 // Link(Except tile)
-$link-color: $jcbi-color-red;
-$common-link-color: $jcbi-color-red;
+$link-color: $sanpo-color-red;
+$common-link-color: $sanpo-color-blue;
 
 // Badge
-$badge-danger-color: $jcbi-color-yellow;
+$badge-danger-color: $sanpo-color-yellow;
 $badge-success-color: $primary;
 
 // Alert
 .alert-info {
-  color: $jcbi-color-yellow;
-  background-color: $jcbi-color-light-yellow;
-  border-color: $jcbi-color-light-yellow;
+  color: $sanpo-color-yellow;
+  background-color: $sanpo-color-light-yellow;
+  border-color: $sanpo-color-light-yellow;
 }
 
 // Label
