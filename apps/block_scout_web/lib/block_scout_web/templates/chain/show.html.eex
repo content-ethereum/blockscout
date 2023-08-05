@@ -51,8 +51,8 @@
             <span class="dashboard-banner-network-stats-label">
               <%= gettext "User addresses" %>
             </span>
-            <span class="dashboard-banner-network-stats-value" data-selector="address-count">
-              <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
+            <span class="dashboard-banner-network-stats-value">
+              <%= gettext "10,000+" %>
             </span>
           </div>
         </div>
