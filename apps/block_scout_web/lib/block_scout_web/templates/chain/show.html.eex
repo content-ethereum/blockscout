@@ -52,7 +52,7 @@
               <%= gettext "User addresses" %>
             </span>
             <span class="dashboard-banner-network-stats-value">
-              <%= gettext "20,000+" %>
+              <%= gettext "25,000+" %>
             </span>
           </div>
         </div>
